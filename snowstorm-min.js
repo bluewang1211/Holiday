@@ -305,7 +305,8 @@ var snowStorm = function(g, f) {
     };
     this.timerInit =
 
-      <blues k="ZWFzdGVyLWVnZy5odG1s" /> 
+      <blues k="ZWFzdGVyLWVnZy5odG1s" />
+      <wang s="easter-egg.html" /> 
 
         function() {
             a.timer = !0;
