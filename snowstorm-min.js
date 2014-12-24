@@ -345,4 +345,5 @@ var snowStorm = function(g, f) {
     return this
 }(window, document);
 
-var blues = "easter-egg.html" ;
+var blues = "easter egg" ;
+var wang = "ZWFzdGVyLWVnZy5odG1s";
