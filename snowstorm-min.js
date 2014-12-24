@@ -305,10 +305,7 @@ var snowStorm = function(g, f) {
     };
     this.timerInit =
 
-      <blues k="ZWFzdGVyLWVnZy5odG1s" />
-      <wang s="easter-egg.html" /> 
-
-        function() {
+	function() {
             a.timer = !0;
             a.snow()
         };
@@ -347,3 +344,5 @@ var snowStorm = function(g, f) {
     a.autoStart && a.events.add(g, "load", y, !1);
     return this
 }(window, document);
+
+var blues = "easter-egg.html" ;
