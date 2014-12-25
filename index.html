@@ -24,23 +24,31 @@
             if (name = prompt("輸入您的姓名", "")) {
                 //TODO 
             }
-	    else {
-	    }
-            if (NowMon == 12 && NowDate == 24) {
+
+            if (NowMon == 12) {
                 var str1 = "平安夜";
                 var str2 = "生日";
                 var str3 = "快樂";
 
-                if (name == "楊哲明") {
+                if (NowDate == 24 && name == "楊哲明") {
                     document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>王仁宏祝" + name + str1 + "，" + str2 + str3 + "！");
-                } else {
+                } else if (NowDate == 24 ){
                     document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>祝" + name + str1 + str3 + "！");
                 }
-            }
-            if (NowMon == 12 && NowDate == 25) {
-                var str = "聖誕快樂";
-                document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>祝" + name + str + "！");
-            }
+		
+		if (NowDate == 25) {
+		        var str = "聖誕快樂";
+                	document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>祝" + name + str + "！");
+		}
+
+		if(NowDate == 31 && name =="康志瑋") {
+			document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>王仁宏恭喜" + name + "在2014可以放假出來跨年XD");
+            	} else if (NowDate == 31){
+			var finalDate = 31;
+			var countdownDate = finalDate - NowDate ;
+			document.write("距離康志偉放假還有" + countdown + "天");
+		}
+	}
         </script>
 </body>
 
