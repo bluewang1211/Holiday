@@ -21,8 +21,16 @@
             var NowMon = tmpMon + 1;
             var NowDate = dt.getDate();
             var name;
-            if (name = prompt("輸入您的姓名", "")) {
-                //TODO 
+
+			name = prompt("輸入您的姓名", "");
+            
+            if (NowMon == 1) {
+            	var birthday = "生日快樂！";
+            	if(NowDate == 19 && name =="鄭靖潔"){
+            		document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>王仁宏祝" + name + birthday);
+            	} else {
+            		document.write("今天是" + NowMon + "月" + NowDate + "日";
+            	}
             }
 
             if (NowMon == 12) {
@@ -36,19 +44,21 @@
                     document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>祝" + name + str1 + str3 + "！");
                 }
 		
-		if (NowDate == 25) {
-		        var str = "聖誕快樂";
-                	document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>祝" + name + str + "！");
-		}
+				if (NowDate == 25) {
+				        var str = "聖誕快樂";
+		                	document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>祝" + name + str + "！");
+				}
 
-		if(NowDate == 31 && name =="康志瑋") {
-			document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>王仁宏恭喜" + name + "在2014可以放假出來跨年XD");
-            	} else if (NowDate == 31){
-			var finalDate = 31;
-			var countdownDate = finalDate - NowDate ;
-			document.write("距離康志偉放假還有" + countdown + "天");
-		}
-	}
+				if(NowDate == 31 && name =="康志瑋") {
+					document.write("今天是" + NowMon + "月" + NowDate + "日，<br/>王仁宏恭喜" + name + "在2014可以放假出來跨年XD");
+		            	}
+				
+				if (NowDate != 31) {
+					var countdown;
+					countdown = 31 - NowDate;
+					document.write("距離康志偉放假還有" + countdown + "天");
+				}
+			}
         </script>
 </body>
 
